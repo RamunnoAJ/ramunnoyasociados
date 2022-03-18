@@ -101,43 +101,14 @@ nav img{
     transition: 1s;
 }
 
-nav .fa-solid{
-    display: none;
-}
 
 /* USO MEDIA PARA LA ACCESIBILIDAD DE DISPOSITIVOS DE OTRO TAMAÑO */
 @media(max-width: 700px){ 
     .text-box h1{
         font-size: 20px;
     }
-
-    .nav-links ul li{
-        display: block;
-    }
-
-    .nav-links{
-        position: absolute;
-        background-color: #f44336;
-        height: 100vh;
-        width: 200px;
-        top: 0;
-        right: -200px;
-        text-align: left;
-        z-index: 2;
-        transition: 1s;
-    }
-
-    nav .fa-solid{
-        display: block;
-        color: white;
-        margin: 10px;
-        font-size: 22px;
-        cursor: pointer;
-    }
-
-    .nav-links ul{
-        padding: 30px;
-
+    .ubicaciones h1, p{
+        font-size: 16px;
     }
 }
 
@@ -159,6 +130,7 @@ nav .fa-solid{
     color: white;
     margin-bottom: 40px;
     padding: 0;
+    font-size: 16px;
 }
 
 
