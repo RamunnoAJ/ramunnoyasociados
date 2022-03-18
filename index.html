@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramunno & Asociados</title>
+
+    <!-- INTRODUCE LA LIBRERIA DE FONTS GOOGLE PARA FUENTES -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&family=Poppins:wght@100;200;300;400;600;700&display=swap" 
+rel="stylesheet">
+
+<!-- INTRODUCE LA LIBRERIA DE FONT AWESOME PARA ICONOS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+        <a href="index.html"><img class="logo" src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">CONTACTO</a></li>
+                </ul>
+            </div> <!-- FIN DEL NAVLINKS-->
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Ramunno & Asociados</h1>
+            <p>Conformamos un grupo de abogados de más de 20 años de experiencia en materia penal, civil, laboral, comercial y de familia.
+            <br>Asesorando a nuestros clientes con responsabilidad, profesionalidad y dedicación permanente.
+            </p>
+            <a href="" class="hero-btn">Contactanos</a>
+        </div>
+    </section> <!-- FIN DEL HEADER-->
+
+    <section class="ubicaciones">
+        <h1>Encontranos en</h1>
+        <p>Güemes 2215 5to D Mar del Plata, Buenos Aires<br>Maipú 623 1ro A Merlo, Buenos Aires  </p>
+
+        <div class="row">
+            <div class="ubi-col">
+                <img src="images/mardelplata2.jpg">
+                <div class="layer">
+                    <h3>MAR DEL PLATA</h3>
+                </div> 
+            </div> <!-- FIN DE MAR DEL PLATA -->
+
+            <div class="ubi-col">
+                <img src="images/merlo2.jpg">
+                <div class="layer">
+                    <h3>MERLO, BUENOS AIRES</h3>
+                </div> 
+            </div> <!-- FIN DE WASHINGTON -->
+        </div> <!-- FIN DEL ROW -->
+    </section> <!-- FIN DE UBICACIONES -->
+
+    <section class="cta">
+        <h1>Llamanos si necesitas asistencia legal</h1>
+        <a href="" class="hero-btn">+54 011 50066521 <br> o<br> +54 011 23164252</a>
+    </section> <!-- FIN DEL CTA -->
+
+    <section class="footer">
+        <div class="container">
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <h2>Envianos un email</h2>
+                <input type="text" id="name" placeholder="Tu nombre y apellido" required>
+                <input type="email" id="email" placeholder="Tu email" required>
+                <input type="text" id="phone" placeholder="Número de teléfono" required>
+                <textarea id="message" rows="4" placeholder="Como te podemos ayudar?"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <h4>Redes sociales</h4>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+    </section> <!-- FIN DEL FOOTER -->
+    
+
+    <!-- JAVASCRIPT PARA LAS INTERACCIONES DEL MENÚ -->
+<script>
+    var navLinks= document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+<script src="https://smtpjs.com/v3/smtp.js">
+    
+</script>
+<script>
+    function sendEmail(){
+        Email.send({
+            Host : "smtp.gmail.com",
+            Username : "ramunnoagustin@gmail.com",
+            Password : "",
+            To : 'daniel_ramunno@hotmail.com',
+            From : document.getElementById("email").value,
+            Subject : "Nuevo contacto de la página web",
+            Body : "Name: " + document.getElementById("name").value
+                + "<br> Email: " + document.getElementById("email").value
+                + "<br> Número de teléfono: " + document.getElementById("phone").value
+                + "<br> Mensaje: " + document.getElementById("message").value
+        }).then(
+        message => alert("Mensaje enviado exitosamente")
+        );
+    }
+</script>
+
+
+</body>
+</html>
