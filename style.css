@@ -19,6 +19,9 @@
     font-size: 60px;
 }
 
+body{
+    background-color: rgba(0, 0, 0, 0.897);
+}
 
 nav{
     display: flex;
@@ -113,14 +116,21 @@ nav img{
     .ubi-col .layer h3{
         font-size: 16px;
     }
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
     .row .ubi-col{
         border-radius: 10px;
         position: block;
         display: flex;
         display: -ms-flexbox;
         flex-direction: column;
+    }
+    
+    .row .ubi-col img{
+        flex-basis: 88%;
         width: 100%;
-        height: 300px;
     }
 }
 
@@ -148,6 +158,7 @@ nav img{
 h1{
     font-size: 36px;
     font-weight: 600;
+    color: white;
 }
 
 p{
@@ -172,12 +183,23 @@ h3{
     padding-top: 50px;
 }
 
+.row{
+    display: inline-flex;
+    margin: auto;
+    position: block;
+}
+
 .ubi-col{
-    flex-basis: 44%;
+    flex-basis: 50%;
     border-radius: 10px;
     margin-bottom: 30px;
+    margin-top: 30px;
     position: relative;
     overflow: hidden;
+    width: 100%;
+}
+#ubi-mardel{
+    margin-right: 50px;
 }
 
 .ubi-col img{
@@ -242,7 +264,7 @@ h3{
 .container{
     width: 100%;
     height: 100vh;
-    background: white;
+    background: #0000000E5;
     display: flex;
     align-items: center;
     justify-content: center;
