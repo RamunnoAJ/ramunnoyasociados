@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ramunno & Asociados</title>
-
     <link rel="stylesheet" href="style.css">
 
     <!-- INTRODUCE LA LIBRERIA DE FONTS GOOGLE PARA FUENTES -->
@@ -50,7 +49,7 @@ rel="stylesheet">
                 <div class="layer">
                     <h3>MERLO, BUENOS AIRES</h3>
                 </div> 
-            </div> <!-- FIN DE WASHINGTON -->
+            </div> <!-- FIN DE MERLO -->
         </div> <!-- FIN DEL ROW -->
     </section> <!-- FIN DE UBICACIONES -->
 
@@ -61,7 +60,7 @@ rel="stylesheet">
 
     <section class="footer">
         <div class="container">
-            <form onsubmit="sendEmail(); reset(); return false;">
+            <form>
                 <h2>Envianos un email</h2>
                 <input type="text" id="name" placeholder="Tu nombre y apellido" required>
                 <input type="email" id="email" placeholder="Tu email" required>
@@ -77,42 +76,6 @@ rel="stylesheet">
             <a target="_blank" href="https://www.linkedin.com/in/daniel-ramunno-39689431/"><i class="fa-brands fa-linkedin"></i></a>
         </div>
     </section> <!-- FIN DEL FOOTER -->
-    
-
-    <!-- JAVASCRIPT PARA LAS INTERACCIONES DEL MENÚ -->
-<script>
-    var navLinks= document.getElementById("navLinks");
-
-    function showMenu(){
-        navLinks.style.right = "0";
-    }
-
-    function hideMenu(){
-        navLinks.style.right = "-200px";
-    }
-</script>
-<script src="https://smtpjs.com/v3/smtp.js">
-    
-</script>
-<script>
-    function sendEmail(){
-        Email.send({
-            Host : "smtp.gmail.com",
-            Username : "ramunnoagustin@gmail.com",
-            Password : "",
-            To : 'daniel_ramunno@hotmail.com',
-            From : document.getElementById("email").value,
-            Subject : "Nuevo contacto de la página web",
-            Body : "Name: " + document.getElementById("name").value
-                + "<br> Email: " + document.getElementById("email").value
-                + "<br> Número de teléfono: " + document.getElementById("phone").value
-                + "<br> Mensaje: " + document.getElementById("message").value
-        }).then(
-        message => alert("Mensaje enviado exitosamente")
-        );
-    }
-</script>
-
 
 </body>
 </html>
