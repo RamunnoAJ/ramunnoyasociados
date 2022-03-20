@@ -28,7 +28,18 @@ rel="stylesheet">
             <p>Conformamos un grupo de abogados de más de 20 años de experiencia en materia penal, civil, laboral, comercial y de familia.
             <br>Asesorando a nuestros clientes con responsabilidad, profesionalidad y dedicación permanente.
             </p>
-            <a href="" class="hero-btn">Contáctanos</a>
+            <button class="button open-button hero-btn">Contáctanos</button>
+            <dialog class="container modal" id="modal">
+                <form class="form" method="dialog">
+                    <button class="closeForm"><i class="fa-solid fa-xmark"></i></button>
+                    <h2>Envianos un email</h2>
+                    <input type="text" id="name" placeholder="Tu nombre y apellido">
+                    <input type="email" id="email" placeholder="Tu email">
+                    <input type="text" id="phone" placeholder="Número de teléfono" >
+                    <textarea id="message" rows="4" placeholder="Como te podemos ayudar?"></textarea>
+                    <button type="submit" class="send">Enviar</button>
+                </form>
+            </dialog>
         </div>
     </section> <!-- FIN DEL HEADER-->
 
@@ -55,20 +66,10 @@ rel="stylesheet">
 
     <section class="cta">
         <h1>Llamanos si necesitas asistencia legal</h1>
-        <a href="#" class="hero-btn2">+54 011 50066521 <br> +54 011 23164252</a>
+        <p class="hero-btn2">+54 011 50066521 <br> +54 011 23164252</p>
     </section> <!-- FIN DEL CTA -->
 
     <section class="footer">
-        <div class="container">
-            <form>
-                <h2>Envianos un email</h2>
-                <input type="text" id="name" placeholder="Tu nombre y apellido" required>
-                <input type="email" id="email" placeholder="Tu email" required>
-                <input type="text" id="phone" placeholder="Número de teléfono" required>
-                <textarea id="message" rows="4" placeholder="Como te podemos ayudar?"></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
         <h4>Redes sociales</h4>
         <div class="icons">
             <a target="_blank" href="https://www.facebook.com/ramunnoyasociados-107374481006548"><i class="fa-brands fa-facebook"></i></a>
@@ -77,5 +78,22 @@ rel="stylesheet">
         </div>
     </section> <!-- FIN DEL FOOTER -->
 
+    <script>
+        const modal= document.querySelector('dialog');
+        const openModal = document.querySelector(".open-button");
+        const closeModal = document.querySelector("dialog");
+
+        //  SOLUCIONADO CAMBIANDO EL TIPO DE DISPLAY SEGUN EL COMANDO QUE SE MUESTRE
+        modal.style.display = 'none';
+
+        openModal.addEventListener("click", () => {
+            modal.showModal();
+            modal.style.display = 'flex';
+        });
+
+        closeModal.addEventListener("click", () => {
+            modal.style.display = 'none';
+        });
+    </script>
 </body>
 </html>
