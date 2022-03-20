@@ -357,6 +357,7 @@ form .send{
     border-radius: 30px;
     border: 1px solid black;
 }
+
 form .closeForm{
     padding: 5px;
     outline: none;
@@ -376,9 +377,24 @@ form .closeForm{
         padding: 10px;
         font-size: 15px;
     }
+
     form button{
         padding: 8px;
         font-size: 14px;
+    }
+
+    form .send{
+        padding: 5px;
+        margin: 10px auto 0;
+        width: 100px;
+        font-size: 14px;
+    }
+
+    form h2{
+        color: white;
+        font-weight: 600;
+        margin-bottom: 10px;
+        margin-top: 10px;
     }
 }
     
