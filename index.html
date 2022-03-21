@@ -27,14 +27,14 @@ rel="stylesheet">
             </p>
             <button class="button open-button hero-btn">Contáctanos</button>
             <dialog class="container modal" id="modal">
-                <form class="form" method="dialog">
+                <form class="form" method="post" action="https://formsubmit.co/aebbad3500545f6a1b453acc0a5c33bf">
                     <button class="closeForm"><i class="fa-solid fa-xmark"></i></button>
                     <h2>Envianos un email</h2>
-                    <input type="text" id="name" placeholder="Tu nombre y apellido">
+                    <input type="text" name="nombre" id="name" placeholder="Tu nombre y apellido">
                     <input type="email" id="email" placeholder="Tu email">
                     <input type="text" id="phone" placeholder="Número de teléfono" >
                     <textarea id="message" rows="4" placeholder="Como te podemos ayudar?"></textarea>
-                    <button type="submit" class="send">Enviar</button>
+                    <input type="submit" class="send" value="Enviar"/>
                 </form>
             </dialog>
         </div>
@@ -78,7 +78,8 @@ rel="stylesheet">
     <script>
         const modal= document.querySelector('dialog');
         const openModal = document.querySelector(".open-button");
-        const closeModal = document.querySelector("dialog");
+        const closeModal = document.querySelector(".closeForm");
+        const sendModal = document.querySelector(".send");
 
         //  SOLUCIONADO CAMBIANDO EL TIPO DE DISPLAY SEGUN EL COMANDO QUE SE MUESTRE
         modal.style.display = 'none';
@@ -89,6 +90,10 @@ rel="stylesheet">
         });
 
         closeModal.addEventListener("click", () => {
+            modal.style.display = 'none';
+        });
+
+        sendModal.addEventListener("click", () => {
             modal.style.display = 'none';
         });
     </script>
