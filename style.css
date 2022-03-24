@@ -72,7 +72,7 @@ body{
     font-size: 13px;
     background: transparent;
     position: relative;
-    cursor: auto;
+    cursor: pointer;
 }
 
 .hero-btn2:hover{
@@ -264,7 +264,7 @@ h4{
     opacity: 1;
 }
 
-.city{
+.city{ 
     font-size: 18px;
 }
 
@@ -391,5 +391,20 @@ form .closeForm{
         margin-bottom: 10px;
         margin-top: 10px;
     }
+
+    .hero-btn2 {
+        text-align: center;
+        padding: 10px 20px;
+        font-size: 10px;
+        cursor: pointer;
+    }
+
+    .cta a{
+        display: grid;
+        width: 30%;
+        margin-top: 10px;
+        left: 29%;
+    }
+    
 }
     
