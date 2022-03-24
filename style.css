@@ -21,6 +21,7 @@
 
 body{
     background-color: rgba(0, 0, 0, 0.897);
+    font-size: 16px;
 }
 
 .text-box{
@@ -264,8 +265,20 @@ h4{
     opacity: 1;
 }
 
-.city{ 
-    font-size: 18px;
+.layer span{
+    width: 100%;
+    font-weight: 400;
+    color: white;
+    font-size: 16px;
+    transform: translateX(-50%);
+    position: relative;
+    transition: 0.5s;
+    bottom: -40%;
+}
+
+.layer:hover span{
+    bottom: 35%;
+    opacity: 1;
 }
 
 /* ---- FOOTER ---- */
