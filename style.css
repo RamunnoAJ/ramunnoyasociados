@@ -25,7 +25,7 @@ body{
 }
 
 .text-box{
-    width: 90%;
+    width: 100%;
     color: white ;
     position: absolute;
     top: 50%;
@@ -117,13 +117,20 @@ body{
         left: 50%;
     }
     .text-box h1{
-        font-size: 20px;
+        font-size: 30px;
+    }
+    .text-box p{
+        font-size: 12px;
     }
     .ubicaciones h1, p{
         font-size: 16px;
     }
     .ubi-col .layer h3{
         font-size: 16px;
+        top: 35%;
+    }
+    .ubi-col .layer span{
+        font-size: 12px;
     }
     .row{
         display: flex;
@@ -313,6 +320,13 @@ h4{
     background: rgb(0 0 0 / 0.0);
 }
 
+.modal{
+    display: flex;
+    top: 0;
+    left: 0;
+    transform: translate(15%, -30%);
+}
+
 form{
     background: rgb(114, 111, 111);
     display: grid;
@@ -368,11 +382,11 @@ form .closeForm{
 }
 
 @media(max-width: 700px){
-    .container{
-        left: 5%;
+    .modal{
+        transform: translate(0%, -25%);
     }
     form{
-        width: 100%;
+        width: 90%;
         max-width: 600px;
     }
     
@@ -384,7 +398,7 @@ form .closeForm{
         margin: 8px 2px 2px 2px;
         padding: 10px;
         font-size: 15px;
-    }
+}
 
     form button{
         padding: 8px;

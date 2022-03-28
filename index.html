@@ -25,10 +25,10 @@ rel="stylesheet">
             <p>Conformamos un grupo de abogados con más de 20 años de experiencia en materia penal, civil, laboral, comercial y de familia.
             <br>Asesorando a nuestros clientes con responsabilidad, profesionalidad y dedicación permanente.
             </p>
-            <button class="button open-button hero-btn">Contáctanos</button>
+            <button class="button open-button hero-btn" type="button">Contáctanos</button>
             <dialog class="container modal" id="modal">
                 <form class="form" method="post" action="https://formsubmit.co/aebbad3500545f6a1b453acc0a5c33bf">
-                    <button class="closeForm"><i class="fa-solid fa-xmark"></i></button>
+                    <button class="closeForm" type="button"><i class="fa-solid fa-xmark"></i></button>
                     <h2>Envianos un email</h2>
                     <input type="text" name="Nombre" id="name" placeholder="Tu nombre y apellido" required>
                     <input type="email" name="email" id="email" placeholder="Tu email" required>
@@ -86,7 +86,6 @@ rel="stylesheet">
         modal.style.display = 'none';
 
         openModal.addEventListener("click", () => {
-            modal.showModal();
             modal.style.display = 'flex';
         });
 
