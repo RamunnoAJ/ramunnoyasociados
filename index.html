@@ -1,103 +1,85 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ramunno & Asociados</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" type="x-icon" href="images/logo.png">
-
-    <!-- INTRODUCE LA LIBRERIA DE FONTS GOOGLE PARA FUENTES -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&family=Poppins:wght@100;200;300;400;600;700&display=swap" 
-rel="stylesheet">
-
-<!-- INTRODUCE LA LIBRERIA DE FONT AWESOME PARA ICONOS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
-
+	<meta charset="UTF-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>Ramunno & Asociados</title>
+	<link href="style.css" rel="stylesheet">
+	<link href="images/logo.png" rel="shortcut icon" type="x-icon"><!-- INTRODUCE LA LIBRERIA DE FONTS GOOGLE PARA FUENTES -->
+	<link href="https://fonts.googleapis.com" rel="preconnect">
+	<link href="https://fonts.gstatic.com" rel="preconnect">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"><!-- INTRODUCE LA LIBRERIA DE FONT AWESOME PARA ICONOS -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" rel="stylesheet">
 </head>
-
 <body>
-    <section class="header">
-        <div class="text-box">
-            <h1>Ramunno & Asociados</h1>
-            <p>Conformamos un grupo de abogados con más de 20 años de experiencia en materia penal, civil, laboral, comercial y de familia.
-            <br>Asesorando a nuestros clientes con responsabilidad, profesionalidad y dedicación permanente.
-            </p>
-            <button class="button open-button hero-btn" type="button">Contáctanos</button>
-            <dialog class="container modal" id="modal">
-                <form class="form" method="post" action="https://formsubmit.co/aebbad3500545f6a1b453acc0a5c33bf" novalidate>
-                    <button class="closeForm" type="button"><i class="fa-solid fa-xmark"></i></button>
-                    <h2>Envianos un email</h2>
-                    <p>El precio de la consulta online son $800 <br>abonelos a este cvu: <br><b> 0000003100011399597774<br></b>o alias:<b> ramunnoyasociados</b></p>
-                    <input type="text" name="Nombre" id="name" placeholder="Tu nombre y apellido" required>
-                    <input type="email" name="email" id="email" placeholder="Tu email" required>
-                    <input type="text" name="Teléfono" id="phone" placeholder="Número de teléfono" >
-                    <textarea name="Consulta" id="message" rows="4" placeholder="¿Cómo te podemos ayudar? (Aclare aquí su forma de pago)" required></textarea>
-                    <input type="submit" class="send" value="Enviar"/>
-                </form>
-            </dialog>
-        </div>
-    </section> <!-- FIN DEL HEADER-->
+	<section class="header">
+		<div class="text-box">
+			<h1>Ramunno & Asociados</h1>
+			<p>Conformamos un grupo de abogados con más de 20 años de experiencia en materia penal, civil, laboral, comercial y de familia.<br>
+			Asesorando a nuestros clientes con responsabilidad, profesionalidad y dedicación permanente.</p><button class="button open-button hero-btn" type="button">Contáctanos</button>
+			<dialog class="container modal" id="modal">
+				<form action="https://formsubmit.co/aebbad3500545f6a1b453acc0a5c33bf" class="form" method="post" novalidate="">
+					<button class="closeForm" type="button"><i class="fa-solid fa-xmark"></i></button>
+					<h2>Envianos un email</h2>
+					<p>El precio de la consulta online son $800<br>
+					abonelos a este cvu:<br>
+					<b>0000003100011399597774<br></b>o alias: <b>ramunnoyasociados</b></p><input id="name" name="Nombre" placeholder="Tu nombre y apellido" required="" type="text"> <input id="email" name="email" placeholder="Tu email" required="" type="email"> <input id="phone" name="Teléfono" placeholder="Número de teléfono" type="text"> 
+					<textarea id="message" name="Consulta" placeholder="¿Cómo te podemos ayudar? (Aclare aquí su forma de pago)" required="" rows="4"></textarea> <input class="send" type="submit" value="Enviar">
+				</form>
+			</dialog>
+		</div>
+	</section><!-- FIN DEL HEADER-->
+	<section class="ubicaciones">
+		<h1>Encontranos en</h1>
+		<p>Güemes 2215 5to D Mar del Plata, Buenos Aires<br>
+		Maipú 623 1ro A Merlo, Buenos Aires</p>
+		<div class="row">
+			<div class="ubi-col" id="ubi-mardel">
+				<img src="images/mardelplata2.jpg">
+				<div class="layer">
+					<h3>MAR DEL PLATA, BUENOS AIRES<br>
+					<span>Güemes 2215 5to D</span></h3>
+				</div>
+			</div><!-- FIN DE MAR DEL PLATA -->
+			<div class="ubi-col">
+				<img src="images/merlo2.jpg">
+				<div class="layer">
+					<h3>MERLO, BUENOS AIRES<br>
+					<span>Maipú 623 1ro A</span></h3>
+				</div>
+			</div><!-- FIN DE MERLO -->
+		</div><!-- FIN DEL ROW -->
+	</section><!-- FIN DE UBICACIONES -->
+	<section class="cta">
+		<h1>Llamanos si necesitas asistencia legal</h1><a class="hero-btn2" href="tel:+541150066521">+54 011 50066521</a> <a class="hero-btn2" href="tel:+541123164252">+54 011 23164252</a>
+	</section><!-- FIN DEL CTA -->
+	<section class="footer">
+		<h4>Redes sociales</h4>
+		<div class="icons">
+			<a href="https://www.facebook.com/ramunnoyasociados-107374481006548" target="_blank"><i class="fa-brands fa-facebook"></i></a> <a href="https://www.instagram.com/ramunnoyasociados/?hl=es-la" target="_blank"><i class="fa-brands fa-instagram"></i></a> <a href="https://www.linkedin.com/in/daniel-ramunno-39689431/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+		</div>
+	</section><!-- FIN DEL FOOTER -->
+	<script>
+	       const modal= document.querySelector('dialog');
+	       const openModal = document.querySelector(".open-button");
+	       const closeModal = document.querySelector(".closeForm");
+	       const sendModal = document.querySelector(".send");
 
-    <section class="ubicaciones">
-        <h1>Encontranos en</h1>
-        <p>Güemes 2215 5to D Mar del Plata, Buenos Aires<br>Maipú 623 1ro A Merlo, Buenos Aires  </p>
+	       //  SOLUCIONADO CAMBIANDO EL TIPO DE DISPLAY SEGUN EL COMANDO QUE SE MUESTRE
+	       modal.style.display = 'none';
 
-        <div class="row">
-            <div id="ubi-mardel" class="ubi-col">
-                <img src="images/mardelplata2.jpg">
-                <div class="layer">
-                    <h3>MAR DEL PLATA, BUENOS AIRES<br><span>Güemes 2215 5to D</span></h3>
-                </div> 
-            </div> <!-- FIN DE MAR DEL PLATA -->
+	       openModal.addEventListener("click", () => {
+	           modal.style.display = 'flex';
+	       });
 
-            <div class="ubi-col">
-                <img src="images/merlo2.jpg">
-                <div class="layer">
-                    <h3>MERLO, BUENOS AIRES <br><span>Maipú 623 1ro A</span></h3>
-                </div> 
-            </div> <!-- FIN DE MERLO -->
-        </div> <!-- FIN DEL ROW -->
-    </section> <!-- FIN DE UBICACIONES -->
+	       closeModal.addEventListener("click", () => {
+	           modal.style.display = 'none';
+	       });
 
-    <section class="cta">
-        <h1>Llamanos si necesitas asistencia legal</h1>
-        <a class="hero-btn2" href="tel:+54 11 50066521">+54 011 50066521</a>
-        <a class="hero-btn2" href="tel:+54 11 23164252">+54 011 23164252</a>
-    </section> <!-- FIN DEL CTA -->
-
-    <section class="footer">
-        <h4>Redes sociales</h4>
-        <div class="icons">
-            <a target="_blank" href="https://www.facebook.com/ramunnoyasociados-107374481006548"><i class="fa-brands fa-facebook"></i></a>
-            <a target="_blank" href="https://www.instagram.com/ramunnoyasociados/?hl=es-la"><i class="fa-brands fa-instagram"></i></a>
-            <a target="_blank" href="https://www.linkedin.com/in/daniel-ramunno-39689431/"><i class="fa-brands fa-linkedin"></i></a>
-        </div>
-    </section> <!-- FIN DEL FOOTER -->
-
-    <script>
-        const modal= document.querySelector('dialog');
-        const openModal = document.querySelector(".open-button");
-        const closeModal = document.querySelector(".closeForm");
-        const sendModal = document.querySelector(".send");
-
-        //  SOLUCIONADO CAMBIANDO EL TIPO DE DISPLAY SEGUN EL COMANDO QUE SE MUESTRE
-        modal.style.display = 'none';
-
-        openModal.addEventListener("click", () => {
-            modal.style.display = 'flex';
-        });
-
-        closeModal.addEventListener("click", () => {
-            modal.style.display = 'none';
-        });
-
-        sendModal.addEventListener("click", () => {
-            modal.style.display = 'none';
-        });
-    </script>
+	       sendModal.addEventListener("click", () => {
+	           modal.style.display = 'none';
+	       });
+	</script>
 </body>
 </html>
