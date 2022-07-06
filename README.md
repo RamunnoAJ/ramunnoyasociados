@@ -19,3 +19,7 @@ https://ramunnoaj.github.io/ramunnoyasociados/
 ## WHAT THE APP LOOKS LIKE
 
 ![alt text](https://github.com/RamunnoAJ/ramunnoyasociados/blob/master/images/image.png)
+
+![alt text](https://github.com/RamunnoAJ/ramunnoyasociados/blob/master/images/image-2.png)
+
+![alt text](https://github.com/RamunnoAJ/ramunnoyasociados/blob/master/images/image-3.png)
